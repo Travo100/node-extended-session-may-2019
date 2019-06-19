@@ -16,10 +16,10 @@ if (command === "find-song") {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-
+        //console.log(data)
         // get us our general track data
         const items = data.tracks.items;
-
+        console.log(items);
         for (let i = 0; i < items.length; i++) {
             const songTitle = items[i].name;
             const songPreviewUrl = items[i].preview_url;
